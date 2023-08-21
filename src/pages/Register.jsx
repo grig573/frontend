@@ -21,7 +21,7 @@ export default function Register() {
 
         try{
             const resp = await axios.post('/register',body)
-            if (resp.status === ) {
+            if (resp.status === 200) {
                 setUser(resp.data.user)
                 return <Navigate to="/profile" />
             }
